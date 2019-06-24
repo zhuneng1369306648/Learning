@@ -1,0 +1,24 @@
+package —≠ª∑π˝¬À;
+
+public class CycFilter {
+	public static void main(String[] args) {
+		Animal dog = new Animal("dog","blue");
+		dog.eat();
+		Animal cat = new Animal("cat","yellow");
+		cat.eat();
+		
+	}
+
+}
+class Animal{
+	String name;
+	String color;
+	public Animal(String n, String c) {
+		name = n;
+		color = c;
+	}
+	public void eat() {
+		String name = "¿œ Û";
+		System.out.println(this.name+"≥Ÿ");
+	}
+}

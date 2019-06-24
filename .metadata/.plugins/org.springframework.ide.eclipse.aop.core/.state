@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="springboot-aop"/>
+<aop-project name="blog"/>
+<aop-project name="springboot-client"/>
+<aop-project name="springboot-server"/>
+<aop-project name="springboot-email"/>
+</aop-reference-model>

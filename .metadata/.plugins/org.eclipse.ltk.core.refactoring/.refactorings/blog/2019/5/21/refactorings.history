@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;ContentService.java&apos; to &apos;blog/src/main/java/com.zy.service.article&apos;&#x0D;&#x0A;- Original project: &apos;blog&apos;&#x0D;&#x0A;- Destination element: &apos;blog/src/main/java/com.zy.service.article&apos;&#x0D;&#x0A;- Original element: &apos;com.zy.service.ContentService.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src\/main\/java&lt;com.zy.service.article" element1="/src\/main\/java&lt;com.zy.service{ContentService.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1558321930816" units="1" version="1.0"/>
+</session>

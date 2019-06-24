@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/caozongpeng/SpringBootBlog.git"/>
+		<item value="https://github.com/zhisheng17/blog.git"/>
+		<item value="https://github.com/yadtang/Check.git"/>
+		<item value="https://github.com/GodIsMadao/ExamOnline.git"/>
+		<item value="https://github.com/yaokwok/loveabc.git"/>
+		<item value="https://github.com/nrszc/MyexamOnline.git"/>
+		<item value="https://github.com/jitwxs/Online_Study_System.git"/>
+		<item value="https://github.com/MyBaron/SSM_Shiro.git"/>
+		<item value="https://github.com/Mandelo/ssm_shiro_blog.git"/>
+		<item value="https://github.com/itning/Student-Homework-Management-System.git"/>
+	</list>
+	<list key="EGit.KnownHosts">
+		<item value="git.eclipse.org"/>
+		<item value="bitbucket.org"/>
+		<item value="github.com"/>
+	</list>
+</section>

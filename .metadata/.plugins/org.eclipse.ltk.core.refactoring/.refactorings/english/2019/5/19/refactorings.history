@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;english/sql/online_study_system.sql&apos; to &apos;bishe.sql&apos;" description="Rename resource &apos;online_study_system.sql&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="sql/online_study_system.sql" name="bishe.sql" stamp="1557197164966" updateReferences="true"/>
+</session>

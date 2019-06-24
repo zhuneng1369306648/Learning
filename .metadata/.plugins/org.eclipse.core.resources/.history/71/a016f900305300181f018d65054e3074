@@ -1,0 +1,17 @@
+package 循环过滤;
+
+public class CycFilter {
+	public static void main(String[] args) {
+		String[] array = new String[] {"白鹭","猫头鹰","布谷鸟","乌鸦"};
+		System.out.println("抓老鹰");
+		int eagleCount =0;
+		for(String string:array) {
+			if(string.equals("老鹰"));{
+			System.out.println("抓走");
+			eagleCount++;
+			continue;
+		}
+	}
+}
+
+}

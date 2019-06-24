@@ -1,0 +1,40 @@
+package day10;
+
+public class Test12 {
+	public static void printOneToNthDigits(int n) {
+		//输入的数字不能小于1
+		if(n<1) {
+			throw new RuntimeException("the input must larger than 0");
+		}
+		int[] arr = new int[n];
+		printOneToNthDigits(0,arr);
+	}
+	public static void printOneToNthDigits(int n,int[] arr) {
+		if(n>=arr.length) {
+			printArray(arr);
+		}else {
+			for(int i=0;i<=9;i++) {
+				arr[n] = i;
+				printOneToNthDigits( n+1,arr);
+			}
+		}
+	}
+	
+	public static void printArray(int[] arr) {
+		int index = 0;
+		while(index<arr.length && arr[index] == 0) {
+			index++;
+		}
+		for(int i=index;i<arr.length;i++) {
+			System.out.print(arr[i]);
+		}
+		if(index<arr.length) {
+			System.out.println();
+		}
+	}
+	public static void main(String[] args) {
+		printOneToNthDigits(2);
+		System.out.println();
+	}
+
+}

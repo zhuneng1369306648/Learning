@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zy.dao.CommentDao">
+
+<!--     prefix:在trim标签内sql语句加上前缀。
+
+suffix:在trim标签内sql语句加上后缀。
+
+suffixOverrides:指定去除多余的后缀内容，如：suffixOverrides=","，去除trim标签内sql语句多余的后缀","。
+
+prefixOverrides:指定去除多余的前缀内容 -->
+
+  <!--表名-->
+    <sql id="BASE_TABLE">
+        t_comments
+    </sql>
+    <!--文章表列名-->
+    <sql id="BASE_COLUMN">
+        cm.coid, cm.cid, cm.created, cm.author, cm.authorId, cm.ownerId, cm.mail,
+        cm.url, cm.ip, cm.agent, cm.type, cm.status, cm.parent, cm.content
+    </sql>
+
+    <!--添加评论-->
+    <insert id="addComment" parameterType="com.zy.model.CommentDomain">
+        INSERT INTO
+          <include refid="BASE_TABLE"/>
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            cid, created, author,authorId,ownerId,mail,
+            url, ip, agent, type, status, parent, content
+        </trim>
+        <trim prefix="VALUES(" suffix=")" suffixOverrides=",">
+            #{cid, jdbcType=INTEGER},
+            #{created, jdbcType=INTEGER},
+            #{author, jdbcType=VARCHAR},
+            #{authorId, jdbcType=INTEGER},
+            #{ownerId, jdbcType=INTEGER},
+            #{email, jdbcType=VARCHAR},
+            #{url, jdbcType=VARCHAR},
+            #{ip, jdbcType=VARCHAR},
+            #{agent, jdbcType=VARCHAR},
+            #{type, jdbcType=VARCHAR},
+            #{status, jdbcType=VARCHAR},
+            #{parent, jdbcType=INTEGER},
+            #{content, jdbcType=LONGVARCHAR}
+        </trim>
+    </insert>
+    <!--根据文章ID获取评论-->
+    <select id="getCommentByCId" resultType="com.zy.model.CommentDomain">
+        SELECT
+          <include refid="BASE_COLUMN"/>
+        FROM
+          <include refid="BASE_TABLE"/> AS cm
+        WHERE
+          cm.cid = #{cid, jdbcType=INTEGER}
+          AND
+          cm.status = 'approved'
+        ORDER BY
+          cm.created
+    </select>
+
+    <!--删除评论-->
+    <delete id="deleteComment">
+        DELETE FROM
+          <include refid="BASE_TABLE"/>
+        WHERE
+          coid = #{coid, jdbcType=INTEGER}
+    </delete>
+
+    <!--获取评论总数-->
+    <select id="getCommentCount" resultType="java.lang.Long">
+        SELECT
+          COUNT(*)
+        FROM
+          <include refid="BASE_TABLE"/>
+    </select>
+
+
+  <!--   MyBatis中在查询进行select映射的时候，返回类型可以用resultType，
+  也可以用resultMap，resultType是直接表示返回类型的，而resultMap则是对外部ResultMap的引用，
+  但是resultType跟resultMap不能同时存在。
+在MyBatis进行查询映射时，其实查询出来的每一个属性都是放在一个对应的Map里面的，其中键是属性名，
+值则是其对应的值。
+①当提供的返回类型属性是resultType时，MyBatis会将Map里面的键值对取出赋给resultType所指定的对象对应的属性。
+所以其实MyBatis的每一个查询映射的返回类型都是ResultMap，只是当提供的返回类型属性是resultType的时候，
+MyBatis对自动的给把对应的值赋给resultType所指定对象的属性。
+②当提供的返回类型是resultMap时，因为Map不能很好表示领域模型，就需要自己再进一步的把它转化为对应的对象，
+这常常在复杂查询中很有作用。
+    根据条件查找评论列表 -->
+    <select id="getCommentsByCond" resultType="com.zy.model.CommentDomain" parameterType="com.zy.dto.cond.CommentCond">
+        SELECT
+          <include refid="BASE_COLUMN"/>
+        FROM
+          <include refid="BASE_TABLE"/> AS cm
+        <where>
+            <if test="status != null">
+                AND cm.status = #{status, jdbcType=VARCHAR}
+            </if>
+            <if test="startTime != null">
+                AND cm.created &gt;= #{startTime, jdbcType=INTEGER}
+            </if>
+            <if test="endTime != null">
+                AND cm.created &lt;= #{endTime, jdbcType=INTEGER}
+            </if>
+            <if test="parent != null">
+                AND cm.parent = #{parent, jdbcType=INTEGER}
+            </if>
+        </where>
+        ORDER BY cm.created
+    </select>
+
+    <!--通过ID获取评论-->
+    <select id="getCommentById" resultType="com.zy.model.CommentDomain">
+        SELECT
+          <include refid="BASE_COLUMN"/>
+        FROM
+          <include refid="BASE_TABLE"/> AS cm
+        WHERE
+          cm.coid = #{coid, jdbcType=INTEGER}
+    </select>
+
+    <!--更新评论状态-->
+    <update id="updateCommentStatus">
+        UPDATE
+          <include refid="BASE_TABLE"/>
+        SET
+          status = #{status, jdbcType=VARCHAR}
+        WHERE
+          coid = #{coid, jdbcType=INTEGER}
+    </update>
+
+
+</mapper>

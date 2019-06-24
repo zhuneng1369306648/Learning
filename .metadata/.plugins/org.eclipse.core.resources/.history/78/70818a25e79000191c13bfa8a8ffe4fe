@@ -1,0 +1,22 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /server
+    
+spring:
+  main:
+    host: smtp.163.com
+    username: xxx@163.com
+    password: xxx
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+  boot:
+    admin:
+      notify:
+        from: xxx@163.com
+        to: xxx@qq.com

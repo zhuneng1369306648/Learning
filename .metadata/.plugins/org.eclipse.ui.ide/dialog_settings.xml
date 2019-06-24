@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="G:\github项目\SpringBootBlog"/>
+		<item value="G:\github项目\blog"/>
+		<item value="G:\github项目\Check"/>
+		<item value="G:\github项目\ExamOnline1"/>
+		<item value="G:\github项目\loveabc"/>
+		<item value="G:\github项目\MyexamOnline"/>
+		<item value="G:\github项目\Online_Study_System"/>
+		<item value="G:\github项目\SSM_Shiro"/>
+		<item value="G:\github项目\ssm_shiro_blog"/>
+		<item value="G:\github项目\Student-Homework-Management-System"/>
+		<item value="G:\github项目\java-project3"/>
+		<item value="G:\github项目\Check Maven Webapp"/>
+		<item value="G:\github项目\Studio"/>
+		<item value="G:\github项目\Online-education-platform-ssm-"/>
+		<item value="G:\github项目\ExamOnline"/>
+		<item value="G:\github项目\C--Teach-assistant"/>
+		<item value="G:\github项目\EnglishLearningPlatform"/>
+		<item value="G:\github项目\e_learning"/>
+		<item value="G:\github项目\EnglishLoad"/>
+		<item value="C:\Users\yyy\Desktop\boot"/>
+		<item value="G:\baidupojie\download\1337211322_饥饿的喝口水\我的资源\1\05-JavaWeb企业实战项目(学习6天)\day06__6天项目后天模块二\day06__6天项目后天模块二\day27_案例\day27_案例\resource\note\全部代码\全部代码\store_v5"/>
+		<item value="G:\baidupojie\download\1337211322_饥饿的喝口水\我的资源\1\04-JavaWeb知识(学习12天)\day07-MVC设计模式\day07-MVC设计模式\day15\code&amp;资料\code\stu1"/>
+		<item value="C:\Users\yyy\Desktop\stu1"/>
+		<item value="G:\Java项目\java1项目\ConnectionPool"/>
+		<item value="C:\Users\yyy\Desktop\StuManager1"/>
+		<item value="C:\Users\yyy\Desktop\StuManager"/>
+		<item value="G:\书籍\ssm配套书籍\Chapter2"/>
+		<item value="G:\baidupojie\download\1337211322_饥饿的喝口水\我的资源\1\04-JavaWeb知识(学习12天)\day02_HTTP&amp;Servlet\day02_HTTP&amp;Servlet\day10\code&amp;资料\code\HelloWeb"/>
+		<item value="G:\baidupojie\download\1337211322_饥饿的喝口水\我的资源\1\03-MySql数据库与JDBC(学习3天)\day01_JDBC\day01_JDBC\day08\code&amp;资料\code\JDBC_CRUD"/>
+		<item value="C:\Users\yyy\Desktop\SSH实现的投票系统后台\Votesystem"/>
+		<item value="G:\Java项目\java1项目\SSH实现的投票系统后台"/>
+		<item value="G:\day加强\day01\代码\day01"/>
+		<item value="C:\Users\yyy\Desktop\SSH实现的投票系统后台"/>
+	</list>
+	<section name="CleanDialogSettings">
+		<item value="581" key="DIALOG_WIDTH"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="445" key="DIALOG_HEIGHT"/>
+		<item value="670" key="DIALOG_X_ORIGIN"/>
+		<item value="220" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\yyy\Desktop\boot-crm"/>
+			<item value="C:\Users\yyy\Desktop\boot"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="ResourceNavigator">
+		<item value="taotao" key="ResourceWorkingSetFilter.STORE_WORKING_SET"/>
+		<item value="1" key="ResourceViewer.STORE_SORT_TYPE"/>
+		<item value="false" key="LINK_NAVIGATOR_TO_EDITOR"/>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.springsource.ide.eclipse.commons.gettingstarted.wizard.boot.NewSpringBootWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="org.springsource.ide.eclipse.boot.wizards.category"/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="600" key="DIALOG_X_ORIGIN"/>
+		<item value="275" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
+		<item value="false" key="FilterByLocation"/>
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode/&gt;&#x0D;&#x0A;&lt;/History&gt;" key="History"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;workingSet workingSetName=&quot;毕业设计&quot;/&gt;" key="WorkingSet"/>
+		<item value="false" key="ShowDerived"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="777" key="DIALOG_X_ORIGIN"/>
+			<item value="271" key="DIALOG_Y_ORIGIN"/>
+		</section>
+	</section>
+</section>

@@ -1,0 +1,330 @@
+比如得到页数： 26个数据  一个5个数据  得多少页
+
+(26+5-1)/5=6
+
+js总结
+jQuery
+jQuery Mobile
+HTML DOM
+AJAX
+JSON
+ASP/PHP
+
+
+
+ipconfig
+stack onflow
+
+Hibernate   ORM
+(映射)
+
+
+拦截器+反射就是在reuqest到达后台处理程序之间，加了一层拦截器，截取到request对象，就可以i通过request.getParameters()获取请求
+参数 然后通过请求UEL可以得知你要请求的是哪个action类的哪个方法处理。然后你的action中定义了跟request 请求参数名称同名的属性，
+并提供get set方法，然后就可以将参数设置进去，也就是所谓的action属性自动注入
+
+instanceof运算符希望左操作数是一个对象，右操作数表示对象的类（初始化对象的构造函数）。如果左侧的对象是右侧对象的实例，返回true，否则返回false。 
+例如：计算o instanceof f ? 首先计算f.prototype，然后在原型链中查找o，找到返回true
+NaN表示非数字值，特殊之处：它和任何值都不相等，包括自身。判断NaN的方法：x!=x返回true
+html语言中加粗的标签有<b>和<strong>,或者使用css设置｛font-weight:bold｝
+
+function checkState(){
+1
+ alert("liyuming"); 
+1
+ }
+1
+ window.setTimeout(checkState(), 10000); //立即被调用 
+
+1
+window.setTimeout(checkState, 10000); // 10s后被调用 
+1
+window.setTimeout("checkState()", 10000); //10s后被调用 注意和第一个的区别 有引号
+
+
+this指向
+1)当在函数调用的时候指向widow
+2)当方法调用的时候指向调用对象
+3)当用apply和call上下文调用的时候指向传入的第一个参数
+4)构造函数调用指向实例对象
+
+
+正确解析: 1.canvas的确是绘制位图的，svg是绘制矢量图，矢量图放大了不失真，也就是放大了不模糊，而canvas画的放大了要变成撸多了的模式。
+之所以错是canvas不能动态渲染，说白了就是不能直接动DOM树，画了不能再通过js去修改，只能从源码修改。 
+2.只有HTML5能干掉flash和silverlight，而不是canvas
+
+_blank:在新窗口打开 _self:在当前窗口打开 _parent:在父级窗口打开 _top:在最顶级窗口打开
+
+1、“+”是左关联，表达式相当于“2”+3+4=("2"+3)+4=“234”
+2、根据ES5规范11,6,1节，如果某个操作数是字符串或者能够通过以下步骤转换为字符串的话，+将进行拼接操作。
+
+
+样式优先级由高到低可分为：
+1  在属性后面使用!important会覆盖页面内任何位置定义的元素样式。1，0，0，0
+2  作为style属性写在元素内的样式
+3  id选择器0，1，0，0
+4  类选择器 = 伪类选择器=属性选择器 （后面的样式会覆盖前面的样式）0.0.1.0
+5  标签选择器0，0，0，1
+  （元素和伪元素）0，0，0，1
+6  通配符选择器0000  
+7  浏览器自定义的样式 ?
+注：越精确优先级越高。ID只有一个。2个选择器优先级是一样的，谁在后面谁起作用，因为我们知道后面的样式会覆盖前面的样式。
+
+ .col-xs- 超小屏幕 手机 <768px
+- .col-sm- 小屏幕 平板  >=768px
+- .col-md- 中等屏幕  >=992px
+- .col-lg- 大屏幕  >1200px
+
+hasOwnProperty： 是用来判断一个对象是否有你给出名称的属性或对象。不过需要注意的是，此方法无法检查该对象的原型链中是否具有该属性，该属性必须是对象本身的一个成员。
+isPrototypeOf : 是用来判断要检查其原型链的对象是否存在于指定对象实例中，是则返回true，否则返回false。
+
+-moz代表firefox浏览器私有属性
+-ms代表IE浏览器私有属性
+-webkit代表chrome、safari私有属性 IE使用的是Trident内核，Firefox 使用的是Gecko内核。目前使用IE内核的浏览器还有搜狗，遨游，360等等。
+
+
+下面哪些方法可以用作javascript异步模式的编程？
+回调函数，这是异步编程最基本的方法。
+事件监听，另一种思路是采用事件驱动模式。任务的执行不取决于代码的顺序，而取决于某个事件是否发生。
+发布/订阅，上一节的"事件"，完全可以理解成"信号"。
+Promises对象，Promises 对象是CommonJS 工作组提出的一种规范，目的是为异步编程提供统一接口。
+
+eval：返回字符串表达式中的值
+unEscape：返回字符串ASCI码
+escape：返回字符的编码
+parseFloat：返回实数
+
+函数声明
+function sum(a,b){
+    return a+b
+}
+函数表达式
+var sum = function(a,b){
+    return a+b
+}
+Function构造函数【从技术角度讲，这是一个函数表达式】
+var sum = new Function('a','b','return a+b')//不推荐使用，影响函数解析性能
+
+$.ajax()函数依赖服务器提供的信息来处理返回的数据。如果服务器报告说返回的数据是XML，那么返回的结果就可以用普通的XML方法或者jQuery的选择器来遍历。如果见得到其他类型，比如HTML，则数据就以文本形式来对待。
+通过dataType选项还可以指定其他不同数据处理方式。除了单纯的XML，还可以指定 html、json、jsonp、script或者text。
+
+1.Ajax的优势：1.可搜索性 2.开放性 3.费用 4.易用性 5.易于开发。
+2.Flash的优势：1.多媒体处理 2.兼容性 3.矢量图形 4.客户端资源调度
+3.Ajax的劣势：1.它可能破坏浏览器的后退功能   2.使用动态页面更新使得用户难于将某个特定的状态保存到收藏夹中 ，不过这些都有相关方法解决。
+4.Flash的劣势：1.二进制格式 2.格式私有 3.flash 文件经常会很大，用户第一次使用的时候需要忍耐较长的等待时间  4.性能问题
+
+
+1.   导入样式：在 .css文件中使用@import url("...")来引入另一个css样式表
+2.   外部样式：在html页面中的head中使用 link 标签引入，如<link rel="stylesheet" type="text/css" href="a.css" />
+3. 内部样式(嵌入式)：在HTML页面中的 style 标签中使用样式 , <style type="text/css">...</style>
+4. 内联样式：与html标签的内部使用style属性设置的样式，直接与当前html标签相关联，如<div style=" width:100px; "></div>
+
+link标签是同时加载的 script标签才会加载完一个再加载另一个
+
+link和@import区别：
+两者都是外部引用CSS的方式，但是存在一定的区别：
+区别1：link是XHTML标签，除了加载CSS外，还可以定义RSS等其他事务；@import属于CSS范畴，只能加载CSS。
+区别2：link引用CSS时，在页面载入时同时加载；@import需要页面网页完全载入以后加载。
+区别3：link是XHTML标签，无兼容问题；@import是在CSS2.1提出的，低版本的浏览器不支持（ie5及以下）。
+区别4：ink支持使用Javascript控制DOM去改变样式；而@import不支持。
+
+具体：
+两者差别： 
+1 适用范围不同 
+@import可以在网页页面中使用，也可以在css文件中使用，用来将多个css文件引入到一个css文件中；而link只能将css文件引入到网页页面中。
+
+2 功能范围不同 
+link属于XHTML标签，而@import是CSS提供的一种方式，link标签除了可以加载CSS外，还可以定义rel连接属性，定义RSS等，@import就只能加载CSS。 
+3 加载顺序不同 
+页面被加载的时候，link引用的CSS会同时被加载，而@import引用的CSS会等到页面全部被下载完再被加载。所以有时候浏览@import加载CSS的页面时开始会没有样式（就是闪烁）。 
+4 兼容性 
+由于@import是css2.1提出的，所以老的浏览器不支持，@import只有在IE5以上的才能识别，而link标签无此问题。 
+5 控制样式时的差别 
+使用link方式可以让用户切换CSS样式.现代浏览器如Firefox,Opera,Safari都支持rel=”alternate stylesheet”属性(即可在浏览器上选择不同的风格),当然你还可以使用Javascript使得IE也支持用户更换样式。 
+6 使用DOM控制样式时的差别 
+当使用JavaScript控制DOM去改变样式的时候，只能使用link标签，因为@import不是DOM可以控制的。
+
+x++：先赋值再自加 
+++x：先自加再赋值
+
+GBK通常指GB2312编码 只支持简体中文字 2、utf通常指UTF-8，支持简体中文字、繁体中文字、英文、日文、韩文等语言（支持文字更广） 3、通常国内使用utf-8和gb2312
+iso-8859-2编码欧洲地区编码方式
+
+Ajax技术核心就是XMLHttpRequest对象。
+Ajax技术的工作原理：可以分成3步
+1.创建Ajax对象：var xhr = new XMLHttpRequest();
+2.xhr 发送请求：xhr.open('get','test.html','true');
+                          xhr.send();
+3.xhr获取响应：
+                          xhr.onreadystatechange = function(){
+                                   if(xhr.readystate == 4){//请求的状态码
+                                                       /*
+                                                                   0:请求还没有建立（open执行前）
+                                                                   1：请求建立了还没发送（执行了open）
+                                                                    2：请求正式发送（执行了send）
+                                                                   3：请求已受理，有部分数据可以用，但还没有处理完成
+                                                                 4：请求完全处理完成
+                                                           */
+                                         alert(xhr.responseText);//返回的数据
+                                     }
+                             }
+
+伪类：:active 向被激活的元素添加样式。 
+:focus 向拥有键盘输入焦点的元素添加样式。 
+:hover 当鼠标悬浮在元素上方时，向元素添加样式。 
+:link 向未被访问的链接添加样式。 
+:visited 向已被访问的链接添加样式。
+
+typeof
+undefined        值未定义
+boolean           布尔值
+string               字符串
+number            数值（整形和浮点）
+object                对象或null
+function            函数
+
+标准盒子模型 ＝ margin + border + padding + content （content =  width | height）
+IE盒子模型 ＝ margin + content （content = border + padding + width | height）
+content是实际占用宽度
+
+ var a=b=3 时a是局部变量，而b是全局变量
+ var a=b=3 相当于 var a = 3；b = 3；b是全局的
+ 
+ 
+ 存储技术有哪些？
+浏览器端：
+cookie
+WebStorage(localStorage、sessionStorage)
+userData
+indexedDB
+服务器端：
+session
+
+‘Promise 对象代表一个异步操作，有3种状态：Pending(进行中)、Resolved(已完成，又称Fulfilled)和Rejected(已完成)’
+
+
+
+
+css中可继承元素和不可继承：
+一、无继承性的属性
+1、display：规定元素应该生成的框的类型
+2、文本属性：
+vertical-align：垂直文本对齐
+text-decoration：规定添加到文本的装饰
+text-shadow：文本阴影效果
+white-space：空白符的处理
+unicode-bidi：设置文本的方向
+3、盒子模型的属性：width、height、margin 、margin-top、margin-right、margin-bottom、margin-left、border、border-style、border-top-style、border-right-style、border-bottom-style、border-left-style、border-width、border-top-width、border-right-right、border-bottom-width、border-left-width、border-color、border-top-color、border-right-color、border-bottom-color、border-left-color、border-top、border-right、border-bottom、border-left、padding、padding-top、padding-right、padding-bottom、padding-left
+4、背景属性：background、background-color、background-image、background-repeat、background-position、background-attachment
+5、定位属性：float、clear、position、top、right、bottom、left、min-width、min-height、max-width、max-height、overflow、clip、z-index
+6、生成内容属性：content、counter-reset、counter-increment
+7、轮廓样式属性：outline-style、outline-width、outline-color、outline
+8、页面样式属性：size、page-break-before、page-break-after
+9、声音样式属性：pause-before、pause-after、pause、cue-before、cue-after、cue、play-during
+ 
+二、有继承性的属性
+1、字体系列属性
+font：组合字体
+font-family：规定元素的字体系列
+font-weight：设置字体的粗细
+font-size：设置字体的尺寸
+font-style：定义字体的风格
+font-variant：设置小型大写字母的字体显示文本，这意味着所有的小写字母均会被转换为大写，但是所有使用小型大写字体的字母与其余文本相比，其字体尺寸更小。
+font-stretch：对当前的 font-family 进行伸缩变形。所有主流浏览器都不支持。
+font-size-adjust：为某个元素规定一个 aspect 值，这样就可以保持首选字体的 x-height。
+2、文本系列属性
+text-indent：文本缩进
+text-align：文本水平对齐
+line-height：行高
+word-spacing：增加或减少单词间的空白（即字间隔）
+letter-spacing：增加或减少字符间的空白（字符间距）
+text-transform：控制文本大小写
+direction：规定文本的书写方向
+color：文本颜色
+3、元素可见性：visibility
+4、表格布局属性：caption-side、border-collapse、border-spacing、empty-cells、table-layout
+5、列表布局属性：list-style-type、list-style-image、list-style-position、list-style
+6、生成内容属性：quotes
+7、光标属性：cursor
+8、页面样式属性：page、page-break-inside、windows、orphans
+9、声音样式属性：speak、speak-punctuation、speak-numeral、speak-header、speech-rate、volume、voice-family、pitch、pitch-range、stress、richness、、azimuth、elevation
+ 
+三、所有元素可以继承的属性
+1、元素可见性：visibility
+2、光标属性：cursor
+ 
+四、内联元素可以继承的属性
+1、字体系列属性
+2、除text-indent、text-align之外的文本系列属性
+ 
+五、块级元素可以继承的属性
+1、text-indent、text-align
+
+
+1.Ajax的优势：1.可搜索性 2.开放性 3.费用 4.易用性 5.易于开发。
+2.Flash的优势：1.多媒体处理 2.兼容性 3.矢量图形 4.客户端资源调度
+3.Ajax的劣势：1.它可能破坏浏览器的后退功能   2.使用动态页面更新使得用户难于将某个特定的状态保存到收藏夹中 ，不过这些都有相关方法解决。
+4.Flash的劣势：1.二进制格式 2.格式私有 3.flash 文件经常会很大，用户第一次使用的时候需要忍耐较长的等待时间  4.性能问题
+
+javascript中实现跨域的方式总结
+
+第一种方式：jsonp请求；jsonp的原理是利用<script>标签的跨域特性，可以不受限制地从其他域中加载资源，类似的标签还有<img>.
+第二种方式：document.domain；这种方式用在主域名相同子域名不同的跨域访问中
+第三种方式：window.name；window的name属性有个特征：在一个窗口(window)的生命周期内,窗口载入的所有的页面都是共享一个window.name的，每个页面对window.name都有读写的权限，window.name是持久存在一个窗口载入过的所有页面中的，并不会因新页面的载入而进行重置。
+第四种方式：window.postMessage；window.postMessages是html5中实现跨域访问的一种新方式，可以使用它来向其它的window对象发送消息，无论这个window对象是属于同源或不同源。
+第五种方式：CORS；CORS背后的基本思想，就是使用自定义的HTTP头部让浏览器与服务器进行沟通，从而决定请求或响应是应该成功还是应该失败。
+第六种方式：Web Sockets；web sockets原理：在JS创建了web socket之后，会有一个HTTP请求发送到浏览器以发起连接。取得服务器响应后，建立的连接会使用HTTP升级从HTTP协议交换为web sockt协议。
+
+
+CSS Sprites
+1.简介
+CSS Sprites在国内很多人叫css精灵，是一种网页图片应用处理方式。它允许将一个页面涉及到的所有零星图片都包含到一张大图中， 利用CSS的“background-image”，“background- repeat”，“background-position”的组合进行背景定位， 访问页面时避免图片载入缓慢的现象。
+2.优点
+（1）CSS Sprites能很好地减少网页的http请求，从而大大的提高页面的性能，这是CSS Sprites最大的优点，也是其被广泛传播和应用的主要原因；
+（2）CSS Sprites能减少图片的字节；
+（3）CSS Sprites解决了网页设计师在图片命名上的困扰，只需对一张集合的图片命名，不需要对每一个小图片进行命名，从而提高了网页制作效率。
+（4）CSS Sprites只需要修改一张或少张图片的颜色或样式来改变整个网页的风格。
+3.缺点
+（1）图片合并麻烦：图片合并时，需要把多张图片有序的合理的合并成一张图片，并留好足够的空间防止版块出现不必要的背景。
+（2）图片适应性差：在高分辨的屏幕下自适应页面，若图片不够宽会出现背景断裂。
+（3）图片定位繁琐：开发时需要通过工具测量计算每个背景单元的精确位置。
+（4）可维护性差：页面背景需要少许改动，可能要修改部分或整张已合并的图片，进而要改动css。在避免改动图片的前提下，又只能（最好）往下追加图片，但这样增加了图片字节。
+
+
+length      返回浏览器历史列表中的URL数量
+back()      加载 history 列表中的前一个URL
+forward() 加载 history 列表中的下一个URL
+go()         加载history列表中的某个具体页面。
+
+DOM中的事件对象：（符合W3C标准）
+   preventDefault()        取消事件默认行为
+   stopImmediatePropagation() 取消事件冒泡同时阻止当前节点上的事件处理程序被调用。
+   stopPropagation()      取消事件冒泡对当前节点无影响。
+IE中的事件对象：
+   cancelBubble()          取消事件冒泡
+   returnValue()             取消事件默认行为
+   
+   
+   CSS 百分比参照问题
+参照父元素宽度的元素：padding margin width text-indent
+参照父元素高度的元素：height
+参照父元素属性:font-size line-height
+特殊：相对定位的时候，top(bottom) left(right)参照的是父元素的内容区域的高度与宽度，而绝对定位的时候参照的是最近的定位元素包含padding的高度与宽度
+
+padding:10px 5px 15px 20px;
+上填充是 10px
+右填充是 5px
+下填充是 15px
+左填充是 20px
+
+padding:10px 5px 15px;
+上填充是 10px
+右填充和左填充是 5px
+下填充是 15px
+
+padding:10px 5px;
+上填充和下填充是 10px
+右填充和左填充是 5px
+
+padding:10px;
+所有四个填充都是 10px

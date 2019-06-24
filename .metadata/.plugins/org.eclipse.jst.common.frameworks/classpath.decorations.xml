@@ -1,0 +1,12 @@
+<classpath>
+  <container id="Votesystem!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="C:/Users/yyy/Desktop/SSH实现的投票系统后台/Votesystem/WebContent/WEB-INF/lib/c3p0-0.9.0.4.jar">
+      <source-attachment-path>E:/fileprogram/qudong/jdk6/jre</source-attachment-path>
+    </entry>
+  </container>
+  <container id="stu!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="G:/Java项目/java1项目/stu/WebContent/WEB-INF/lib/c3p0-0.9.1.2.jar">
+      <source-attachment-path>E:/fileprogram/qudong/jar/servlet-api.jar</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

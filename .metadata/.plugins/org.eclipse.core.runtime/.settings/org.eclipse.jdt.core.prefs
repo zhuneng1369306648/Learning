@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.core.classpathVariable.ECLIPSE_HOME=E\:/fileprogram/qudong/javaee/eclipse/
+org.eclipse.jdt.core.classpathVariable.JRE_LIB=E\:/fileprogram/qudong/jdk/jre/lib/rt.jar
+org.eclipse.jdt.core.classpathVariable.JRE_SRC=E\:/fileprogram/qudong/jdk/src.zip
+org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
+org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=C\:/Users/yyy/.p2/pool/plugins/org.junit_4.12.0.v201504281640/
+org.eclipse.jdt.core.classpathVariable.M2_REPO=E\:/fileprogram/qudong/maven/repository
+org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
+org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=9
+org.eclipse.jdt.core.compiler.compliance=9
+org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
+org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
+org.eclipse.jdt.core.compiler.problem.forbiddenReference=warning
+org.eclipse.jdt.core.compiler.source=9
+org.eclipse.jdt.core.userLibrary.jdbc=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<userlibrary systemlibrary\="true" version\="2">\r\n\t<archive path\="E\:/fileprogram/qudong/java/mysql-connector-java-5.1.46.zip"/>\r\n</userlibrary>\r\n

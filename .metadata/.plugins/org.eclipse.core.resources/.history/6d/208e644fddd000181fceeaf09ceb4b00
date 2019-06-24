@@ -1,0 +1,26 @@
+package com.zhaoyu.test;
+
+public class Test04 {
+	/**
+     * 请实现一个函数，把字符串中的每个空格替换成"%20"，例如“We are happy.“，则输出”We%20are%20happy.“。
+     *
+     * @param string     要转换的字符数组
+     * @param usedLength 已经字符数组中已经使用的长度
+     * @return 转换后使用的字符长度，-1表示处理失败
+     */
+	public static int replaceBlank(char[] string, int usedLength) {
+		//判断输入是否合法
+		if(string == null || string.length < usedLength) {
+			return -1;
+		}
+		//统计字符数组中的空白字符数
+		int whiteCount = 0;
+		for(int i=0;i<usedLength;i++) {
+			if(string[i] == ' ') {
+				whiteCount++;
+			}
+		}
+		//计算转换后的字符长度是多少
+	}
+
+}

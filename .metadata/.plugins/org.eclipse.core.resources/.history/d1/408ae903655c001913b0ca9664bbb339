@@ -1,0 +1,5 @@
+package com.zy.advice;
+
+public class BeforeAdviceTest {
+
+}

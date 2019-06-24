@@ -1,0 +1,13 @@
+server:
+  port: 8082
+  
+spring:
+  application:
+    name: Server-provider
+    
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: 

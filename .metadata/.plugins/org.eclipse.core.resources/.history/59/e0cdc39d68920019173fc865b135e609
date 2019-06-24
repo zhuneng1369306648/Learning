@@ -1,0 +1,16 @@
+package com.zy.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.zy.domain.User;
+
+@Configuration
+public class WebConfig {
+	
+	@Bean(initMethod = "init", destroyMethod = "destory")
+	public User user() {
+		return new User();
+	}
+
+}

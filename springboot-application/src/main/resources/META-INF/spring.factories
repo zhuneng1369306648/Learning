@@ -1,0 +1,13 @@
+# Initializers
+org.springframework.context.ApplicationContextInitializer=\
+com.zy.initializer.HelloApplicationContextInitializer,\
+com.zy.initializer.AfterHelloApplicationContextInitializer
+
+# Application Listeners
+org.springframework.context.ApplicationListener=\
+com.zy.listener.ContextClosedEventListener,\
+com.zy.listener.AfterContextClosedEventListener
+
+# Run Listeners
+org.springframework.boot.SpringApplicationRunListener=\
+com.zy.listener.HelloApplicationRunListener
